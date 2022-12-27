@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:naveenfolio/home.dart';
-import 'package:naveenfolio/sections/hero_section.dart';
 
 void main() {
   runApp(const MyApp());

@@ -26,7 +26,7 @@ class AboutText extends StatelessWidget {
       text,
       textAlign: textAlign,
       style: GoogleFonts.poppins(
-        fontSize: isMobTab ? 20.0 : 22.0,
+        fontSize: isMobile ? 18.0 : 20.0,
         fontWeight: FontWeight.w500,
         color: color,
         height: lineHeight,
