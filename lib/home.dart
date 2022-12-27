@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:naveenfolio/sections/about_section.dart';
 import 'package:naveenfolio/sections/hero_section.dart';
-import 'package:naveenfolio/sections/programming_section.dart';
+import 'package:naveenfolio/sections/tech_section.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
           children: const [
             HeroSection(),
             AboutSection(),
-            ProgrammingSection(),
+            TechSection(),
           ],
         ),
       ),

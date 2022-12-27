@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/animate.dart';
+import 'package:flutter_animate/effects/custom_effect.dart';
+import 'package:flutter_animate/effects/fade_effect.dart';
+import 'package:flutter_animate/effects/scale_effect.dart';
+import 'package:flutter_animate/extensions/extensions.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:naveenfolio/constants.dart';
 import 'package:naveenfolio/responsive.dart';
@@ -17,18 +22,22 @@ class HeroInro extends StatelessWidget {
       crossAxisAlignment:
           isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
-        Text(
-          'Naveenchand',
-          textAlign: isMobile || isTablet ? TextAlign.center : TextAlign.start,
-          style: GoogleFonts.poppins(
-            fontSize: isMobile
-                ? 50.0
-                : isTablet
-                    ? 52.0
-                    : 56.0,
-            fontWeight: FontWeight.w600,
-            color: const Color(0xff14213d),
-            height: 2.0,
+        Animate(
+          effects: const [FadeEffect(), ScaleEffect()],
+          child: Text(
+            'Naveenchand',
+            textAlign:
+                isMobile || isTablet ? TextAlign.center : TextAlign.start,
+            style: GoogleFonts.poppins(
+              fontSize: isMobile
+                  ? 50.0
+                  : isTablet
+                      ? 52.0
+                      : 56.0,
+              fontWeight: FontWeight.w600,
+              color: const Color(0xff14213d),
+              height: 2.0,
+            ),
           ),
         ),
         Text(
